@@ -1,0 +1,16 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 0 10%; /* Flex property to take 10% height */
+   /* Example background color */
+}
+
+.main-content {
+  flex: 1; /* Flex property to take remaining 90% height */
+   /* Example background color */
+}
+

@@ -1,0 +1,38 @@
+
+
+.custom-input:focus-visible {
+  /* Optional: Customize focus styles if needed */
+  border: none; /* Example: Change border color on focus */
+  outline: none;
+} 
+
+.custom-input:focus{
+    border: none;
+}
+
+.col-sm {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+  /* font-size: 24px; */
+   /* Ensure the background image covers the entire column */
+  /* background-position: center;  */
+  font-weight: bold;
+}
+
+.custom-image {
+  width: 450px; /* Set desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.custom-button{
+    background: linear-gradient(to right, #9181F4, #5038ED);
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
