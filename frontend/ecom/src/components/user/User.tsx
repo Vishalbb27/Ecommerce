@@ -1,8 +1,9 @@
 import React from "react";
-import Sidebar from "./navigation/Sidebar";
-import Header from "./navigation/Header";
+
 import { Outlet } from "react-router-dom";
 import "../../css/containerSize.css";
+import Header from "./navigation/Header";
+import Sidebar from "./navigation/Sidebar";
 
 const User = () => {
   return (

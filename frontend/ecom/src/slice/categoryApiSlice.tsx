@@ -14,7 +14,13 @@ export const categoryApiSlice = apiSlice.injectEndpoints({
         url: `${CATEGORY_URL}`,
       }),
     }),
+    getCategoryById: builder.query<CategoryDetails, number>({
+      query: (id) => ({
+        url: `${CATEGORY_URL}/${id}`,
+      }),
+    }),
   }),
 });
 
-export const { useGetCategoriesQuery } = categoryApiSlice;
+export const { useGetCategoriesQuery, useLazyGetCategoryByIdQuery } =
+  categoryApiSlice;

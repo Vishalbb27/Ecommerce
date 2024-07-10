@@ -33,7 +33,7 @@ const Header = () => {
     logoutQuery();
     dispatch(logout());
     toast.success("LOGOUT Successful!!!");
-    navigate("/login");
+    navigate("/login", { replace: true });
   }
   return (
     <div className="d-flex flex-row shadow-sm p-2 ps-5 pe-5 justify-content-between">

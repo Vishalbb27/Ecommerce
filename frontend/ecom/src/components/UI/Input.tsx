@@ -11,7 +11,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   ref
 ) {
   return (
-    // <div className="form-goup col-xs-4">
     <input
       id={id}
       name={id}
@@ -20,7 +19,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
       defaultValue={props.defaultValue}
       onChange={(e) => e.currentTarget.value}
     />
-    // </div>
   );
 });
 

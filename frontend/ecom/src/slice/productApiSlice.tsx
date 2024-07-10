@@ -33,8 +33,16 @@ export const productApiSlice = apiSlice.injectEndpoints({
         url: `${PRODUCT_URL}/image/${id}`,
       }),
     }),
+    getProductById: builder.query<productDetails, number>({
+      query: (id) => ({
+        url: `${PRODUCT_URL}/${id}`,
+      }),
+    }),
   }),
 });
 
-export const { useGetAllProductsQuery, useGetProductImageQuery } =
-  productApiSlice;
+export const {
+  useGetAllProductsQuery,
+  useGetProductImageQuery,
+  useGetProductByIdQuery,
+} = productApiSlice;
